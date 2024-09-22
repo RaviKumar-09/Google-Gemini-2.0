@@ -50,3 +50,8 @@
     color: #282828;
     cursor: pointer;
 }
+
+.sidebar .recent-entry:hover{
+    background-color: #e2e6eb;
+}
+
