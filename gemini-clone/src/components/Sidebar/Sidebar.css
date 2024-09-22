@@ -34,3 +34,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.sidebar .recent-tittle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
