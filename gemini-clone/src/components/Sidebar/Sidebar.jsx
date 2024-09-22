@@ -7,9 +7,9 @@ const Sidebar = () => {
     <div className="sidebar">
         <div className="top">
             <img className='menu' src={assets.menu_icon} alt="" />
-            <div className="new-chart">
+            <div className="new-chat">
                 <img src={assets.plus_icon} alt="" />
-                <p>New Chart</p>
+                <p>New Chat</p>
             </div>
         </div>
         <div className="bottom">
