@@ -20,7 +20,11 @@ const ContextProvider = (props) =>{
         setResulData("")
         setLoading(true)
         setShowResult(true)
-        await run(input)
+        const response = await run(input)
+        setResulData(response)
+        setLoading(false)
+        setInput('')
+
     }
 
     /*onSent("What is react js")*/
