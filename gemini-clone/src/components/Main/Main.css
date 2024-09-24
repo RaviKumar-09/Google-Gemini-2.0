@@ -70,3 +70,7 @@
     color: #585858;
     font-size: 17px;
 }
+
+.main .card:hover{
+    background-color: #dfe4e0;
+}
