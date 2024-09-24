@@ -1,4 +1,3 @@
-const apiKey = "AIzaSyAP0kELjYHsn89a8o4MBVy4-tKm4LlupDY"
 
 /*
  * Install the Generative AI SDK
