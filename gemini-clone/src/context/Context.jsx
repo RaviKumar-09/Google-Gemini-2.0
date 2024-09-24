@@ -6,8 +6,8 @@ export const Context = createContext();
 
 const ContextProvider = (props) =>{
 
-    const [input.setInput] = useState("");
-    cont [recentPrompt,setRecentPrompt] = useState("");
+    const [input,setInput] = useState("");
+    const [recentPrompt,setRecentPrompt] = useState("");
     const [prevPrompts,setPrevPrompts] = useState([]);
     const [showResult,setShowResult] = useState(false);
     const [loading,setLoading] = useState(false);
@@ -16,6 +16,10 @@ const ContextProvider = (props) =>{
 
 
     const onSent = async (prompt) => {
+
+        setResulData("")
+        setLoading(true)
+        setShowResult(true)
         await run(input)
     }
 

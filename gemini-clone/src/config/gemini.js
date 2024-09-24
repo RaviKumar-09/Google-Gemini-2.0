@@ -9,7 +9,7 @@ import {
     GoogleGenerativeAI,
     HarmCategory,
     HarmBlockThreshold,
-    
+
   } from "@google/generative-ai";
   
   const apiKey = "AIzaSyAP0kELjYHsn89a8o4MBVy4-tKm4LlupDY";
@@ -37,7 +37,9 @@ import {
     });
   
     const result = await chatSession.sendMessage(prompt);
+    const response = result.response;
     console.log(result.response.text());
+    return response.text();
   }
   
   export default run;
