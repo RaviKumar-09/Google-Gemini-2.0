@@ -16,7 +16,7 @@ const ContextProvider = (props) =>{
 
 
     const onSent = async (prompt) => {
-        await run(prompt)
+        await run(input)
     }
 
     /*onSent("What is react js")*/
@@ -32,7 +32,7 @@ const ContextProvider = (props) =>{
         resultData,
         input,
         setInput,
-        
+
 
     }
 
