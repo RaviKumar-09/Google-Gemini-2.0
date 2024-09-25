@@ -12,6 +12,10 @@ const ContextProvider = (props) =>{
     const [showResult,setShowResult] = useState(false);
     const [loading,setLoading] = useState(false);
     const [resultData,setResulData] = useState("");
+
+    const delayPara = (index,netWord) =>{
+
+    }
     
 
 
@@ -22,7 +26,18 @@ const ContextProvider = (props) =>{
         setShowResult(true)
         setRecentPrompt(input)
         const response = await run(input)
-        setResulData(response)
+        let responseArray = response.split("**")
+        let newResponse ;
+        for (let i = 0; i < responseArray.length;i++)
+        {
+            if (i===0 || i%2 !==1) {
+                newResponse += responseArray[i];
+            }
+            else{
+                newResponse += "<b>"+responseArray[i]+"</b>"
+            }
+        }
+        setResulData(newResponse)
         setLoading(false)
         setInput('')
 
