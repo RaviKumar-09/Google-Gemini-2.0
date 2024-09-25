@@ -122,9 +122,9 @@
 }
 
 .result{
-    pad: 0px 5%;
-    max-width: 70vh;
-    overflow: scroll;
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
 }
 
 .result::-webkit-scrollbar{
@@ -162,7 +162,7 @@
 }
 @keyframes loader{
     0%{
-        background-position: 800px 0px;
+        background-position: -800px 0px;
     }
     100%{
         background-position: 800px 0px;
