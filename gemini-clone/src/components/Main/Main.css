@@ -145,3 +145,8 @@
     align-items: start;
     gap: 20px;
 }
+.loader{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
