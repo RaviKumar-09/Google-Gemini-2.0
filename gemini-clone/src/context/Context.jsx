@@ -13,7 +13,7 @@ const ContextProvider = (props) =>{
     const [loading,setLoading] = useState(false);
     const [resultData,setResulData] = useState("");
 
-    const delayPara = (index,netWord) =>{
+    const delayPara = (index,nextWord) =>{
         setTimeout(function (){
             setResulData(prev=>prev+nextWord)
 
@@ -42,7 +42,7 @@ const ContextProvider = (props) =>{
             }
         }
         let newResponse2 = newResponse.split("*").join("</br>")
-        let newResponseArray = newResponse.split(" ")
+        let newResponseArray = newResponse.split(" ");
         for(let i = 0; i < newResponseArray.length; i++)
         {
            const nextWord = newResponseArray[i];
